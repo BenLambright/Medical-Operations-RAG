@@ -14,13 +14,38 @@
     "answer": "3-0 Vicryl and 4-0 Vicryl."
   },
   {
-    "row": "...",
-    "question":  "What materials would you use for the following operation: ",
-    "answer": "..."
+    "row": "1016",
+    "question":  "What materials would you use for the following operation: 1.  Austin-Akin bunionectomy with internal screw fixation of the first right metatarsophalangeal joint.,2.  Weil osteotomy with internal screw fixation, first right metatarsal.,3.  Arthroplasty, second right PIP joint.",
+    "answer": "3-0 Vicryl, 4-0 Vicryl, 5-0 Prolene, as well as two 16-mm partially treaded cannulated screws of the OsteoMed system, one 18-mm partially treaded cannulated screw of the OsteoMed system of the 3.0 size.  One 10-mm 2.0 partially threaded cannulated screw of the OsteoMed system."
   },
   {
-    "row": "...",
-    "question":  "What materials would you use for the following operation: ",
-    "answer": "..."
+    "row": "1014",
+    "question":  "What materials would you use for the following operation: Austin bunionectomy with internal screw fixation, first metatarsal, left foot.",
+    "answer": "2-0 Vicryl, 3-0 Vicryl, 4-0 Vicryl, as well as a 16-mm and an 18-mm partially threaded cannulated screw from the OsteoMed Screw Fixation System."
+  },
+  {
+    "row": "11",
+    "question":  "Would you use screws for the following operation: Youngswick osteotomy with internal screw fixation of the first right metatarsophalangeal joint of the right foot. Yes or no.",
+    "answer": "Yes"
+  },
+    {
+    "row": "27",
+    "question":  "Would you use a hemostat in the following operation: Elective male sterilization via bilateral vasectomy. Yes or no.",
+    "answer": "Yes"
+  },
+   {
+    "row": "129",
+    "question":  "Would you place drains at the end of the following procesdure: 1.  Basal cell nevus syndrome.,2.  Cystic lesion, left posterior mandible.,3.  Corrected dentition.,4.  Impacted teeth 1 and 16.,5.  Maxillary transverse hyperplasia. Yes or no.",
+    "answer": "No"
+  },
+  {
+    "row": "502",
+    "question":  "Was a Flieringa ring necessary for the procedure?: 1.  Secondary scleral suture fixated posterior chamber intraocular lens implant with penetrating keratoplasty.,2.  A concurrent vitrectomy and endolaser was performed by the vitreoretinal team. Yes or no",
+    "answer": "Yes"
+  },
+  {
+    "row": "872",
+    "question":  "Is a Veress needle used to achieve pneumoperitoneum for the following operation?: Cecal polyp.",
+    "answer": "No"
   }
 ]

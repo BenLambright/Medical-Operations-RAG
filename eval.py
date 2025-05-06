@@ -2,34 +2,74 @@ import evaluate
 from retrieval import Retriever
 import json
 
-# getting our eval metrics
-rouge = evaluate.load("rouge")
-bleu = evaluate.load("bleu")
+class Eval():
+    def __init__(self):
+        self.rouge = evaluate.load("rouge")
+        self.bleu = evaluate.load("bleu")
+        self.llm = Retriever()
+        self.rag_llm = self.llm.build_retriever_graph()
+        self.row = []
+        self.gold = []
+        self.pred = []
 
-# build the model
-llm = Retriever()
-rag_llm = llm.build_retriever_graph()
+    def process_data(self, path):
+        with open(path, "r") as f:
+            procedure = json.load(f)
 
-# get the data
-test_path = "procedure.json"
-with open(test_path, "r") as f:
-    procedure = json.load(f)
+        for item in procedure:
+            print(f"processing {item["row"]}...")
+            self.row.append(item["row"])
+            self.gold.append(item["answer"])
 
-# process the data
-row = []
-gold = []
-pred = []
-for item in procedure:
-    row.append(item["row"])
-    gold.append(item["answer"])
+            # inference
+            inference = self.rag_llm.invoke({"question": item["question"]})
+            self.pred.append(inference["answer"])
 
-    # inference
-    inference = rag_llm.invoke(item["question"])
-    pred.append(inference["answer"])
+    def metrics(self):
+        print("calculating metrics...")
+        rouge_results = self.rouge.compute(predictions=self.pred, references=self.gold)
+        bleu_results = self.bleu.compute(references=self.gold, predictions=self.pred)
 
-# evaluate the results
-rouge_results = rouge.compute(pred, gold)
-bleu_results = bleu.compute(gold, pred)
+        return rouge_results, bleu_results
+
+print("setting up the model...")
+eval_obj = Eval()
+eval_obj.process_data("materials.json")
+# eval_obj.process_data("operation.json")
+# eval_obj.process_data("materials.json")
+print("")
+print(eval_obj.pred)
+print(eval_obj.metrics())
+
+
+# # getting our eval metrics
+# rouge = evaluate.load("rouge")
+# bleu = evaluate.load("bleu")
+#
+# # build the model
+# llm = Retriever()
+# rag_llm = llm.build_retriever_graph()
+#
+# # get the data
+# test_path = "procedure.json"
+# with open(test_path, "r") as f:
+#     procedure = json.load(f)
+#
+# # process the data
+# row = []
+# gold = []
+# pred = []
+# for item in procedure:
+#     row.append(item["row"])
+#     gold.append(item["answer"])
+#
+#     # inference
+#     inference = rag_llm.invoke(item["question"])
+#     pred.append(inference["answer"])
+#
+# # evaluate the results
+# rouge_results = rouge.compute(pred, gold)
+# bleu_results = bleu.compute(gold, pred)
 
 
 # example

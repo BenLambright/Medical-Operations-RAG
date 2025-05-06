@@ -1,1 +1,52 @@
-{"row": "350", "question":  "Given the following information, what operation would you recommend? A man in his mid-sixties was diagnosed with a lateral renal tumor in the lower pole of the left kidney. Imaging and biopsy confirmed renal cell carcinoma. Given its position and size, what surgical approach would be appropriate?", "answer": "Left partial nephrectomy"}
+[
+  {
+    "row": "350",
+    "question":  "Given the following information, what is the name of the operation would you recommend? A man in his mid-sixties was diagnosed with a lateral renal tumor in the lower pole of the left kidney. Imaging and biopsy confirmed renal cell carcinoma. Given its position and size, what surgical approach would be appropriate?",
+    "answer": "Left partial nephrectomy"
+  },
+  {
+    "row": "195",
+    "question":  "Given the following information, what is the name of the operation would you recommend? A 92-year-old African-American female presented with a foul-smelling, necrotic wound in the sacral region. She is diagnosed with a stage IV necrotic sacral decubitus ulcer.",
+    "answer": "Debridement of stage IV necrotic sacral decubitus."
+  },
+  {
+    "row": "499",
+    "question":  "Given the following information, what is the name of the operation would you recommend? A 19-year-old first-time mother (G1, P1) who experienced persistent vaginal bleeding and large clot passage approximately four hours after a vaginal delivery. Diagnosed with Postpartum hemorrhage.",
+    "answer": "Exam under anesthesia.  Removal of intrauterine clots."
+  },
+  {
+    "row": "531",
+    "question":  "Given the following information, what is the name of the operation would you recommend?",
+    "answer": "Incision and drainage of left neck abscess."
+  },
+  {
+    "row": "733",
+    "question":  "Given the following information, what is the name of the operation would you recommend? A 30-year-old woman, gravida 7, para 5, at 39 weeks and 4 days gestation, admitted for labor induction due to a history of delivering large babies and living a long distance from the hospital.",
+    "answer": "Natural vaginal birth with medical support"
+  },
+  {
+    "row": "798",
+    "question":  "Given the following information, what is the name of the operation would you recommend? An 85-year-old female with blood loss anemia and previously incomplete colonoscopy due to poor bowel preparation underwent colonoscopy for further evaluation.",
+    "answer": "Colonoscopy with photos."
+  },
+  {
+    "row": "1017",
+    "question":  "Given the following information, what is the name of the operation would you recommend? A 52-year-old male with an 8-day history of erythema (redness) over the right knee and leg, potentially indicating a septic knee. He was diagnosed with erythema of the right knee and leg, possible septic knee.",
+    "answer": "aspiration through the anterolateral portal of his knee joint."
+  },
+  {
+    "row": "1029",
+    "question":  "Given the following information, what is the name of the operation would you recommend? A 30-year-old white female presented with chronic left shoulder pain unresponsive to conservative outpatient treatment. She was diagnosed with 1.  Impingement syndrome, left shoulder.,2.  Rule out superior labrum anterior and posterior lesion, left shoulder.",
+    "answer": "Arthroscopy with arthroscopic subacromial decompression of the left shoulder."
+  },
+  {
+    "row": "1075",
+    "question":  "Given the following information, what is the name of the operation would you recommend? A middle-aged man who presented with left arm pain. His clinical evaluation revealed multiple levels of cervical spine disease, but symptoms and neurological findings—specifically muscle weakness—were consistent with C6 radiculopathy on the left side.",
+    "answer": "C5-C6 anterior cervical discectomy.,2.  Bone bank allograft.,3.  Anterior cervical plate."
+  },
+  {
+    "row": "648",
+    "question":  "Given the following information, what is the name of the operation would you recommend? A 52-year-old morbidly obese Black woman with a longstanding history of gastroesophageal reflux disease (GERD) and associated symptoms, including chronic dyspepsia, hoarseness, and persistent cough. Despite trying multiple medical treatments, her symptoms have remained refractory to therapy.",
+    "answer": "Esophagogastroduodenoscopy with pseudo and esophageal biopsy."
+  }
+]
