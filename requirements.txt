@@ -1,0 +1,7 @@
+langchain-core==0.3.54
+langchain-huggingface== 0.1.2
+langchain==0.3.23
+typing-extensions==4.12.2
+langchain-together==0.3.0
+langgraph== 0.3.31
+pandas==2.2.3

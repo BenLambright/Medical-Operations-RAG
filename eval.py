@@ -34,42 +34,12 @@ class Eval():
 
 print("setting up the model...")
 eval_obj = Eval()
-eval_obj.process_data("materials.json")
-# eval_obj.process_data("operation.json")
-# eval_obj.process_data("materials.json")
+eval_obj.process_data("data/materials.json")
+# eval_obj.process_data("data/operation.json")
+# eval_obj.process_data("data/materials.json")
 print("")
 print(eval_obj.pred)
 print(eval_obj.metrics())
-
-
-# # getting our eval metrics
-# rouge = evaluate.load("rouge")
-# bleu = evaluate.load("bleu")
-#
-# # build the model
-# llm = Retriever()
-# rag_llm = llm.build_retriever_graph()
-#
-# # get the data
-# test_path = "procedure.json"
-# with open(test_path, "r") as f:
-#     procedure = json.load(f)
-#
-# # process the data
-# row = []
-# gold = []
-# pred = []
-# for item in procedure:
-#     row.append(item["row"])
-#     gold.append(item["answer"])
-#
-#     # inference
-#     inference = rag_llm.invoke(item["question"])
-#     pred.append(inference["answer"])
-#
-# # evaluate the results
-# rouge_results = rouge.compute(pred, gold)
-# bleu_results = bleu.compute(gold, pred)
 
 
 # example
