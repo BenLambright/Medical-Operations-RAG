@@ -1,4 +1,4 @@
-# Final Project Title
+# RAG System for Medical Operations Information Retrieval
 
 ## Overview
 
